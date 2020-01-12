@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.Docker.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>e7832a11-26ec-4ab3-99d8-4db5d9c689eb</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Windows</DockerTargetOS>
+    <DockerServiceName>cm</DockerServiceName>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".env" />
+    <None Include="docker-compose.override.yml">
+      <DependentUpon>docker-compose.yml</DependentUpon>
+    </None>
+    <None Include="docker-compose.yml" />
+  </ItemGroup>
+</Project>

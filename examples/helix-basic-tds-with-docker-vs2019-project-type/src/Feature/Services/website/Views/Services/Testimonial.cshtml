@@ -1,17 +1,28 @@
 ﻿@using BasicCompany.Feature.Services;
 @using BasicCompany.Foundation.FieldRendering
+@model Sitecore.Mvc.Presentation.RenderingModel
 
 @{
-    var testimonialImageOptions = new Sitecore.Resources.Media.MediaUrlOptions
-    {
-        MaxWidth = 960,
-        AllowStretch = false,
-    };
+  var testimonialImageOptions = new Sitecore.Links.UrlBuilders.MediaUrlBuilderOptions()
+  {
+    MaxWidth = 960,
+    AllowStretch = false,
+  };
 }
 
-<div class="column testimonial is-6">
+
+
+@if (!Sitecore.Context.PageMode.IsExperienceEditor)
+{
+  <div class="column testimonial is-6 graphQlTestimonial" data-id="@Model.Item.ID" data-mediaUrlOptions="@testimonialImageOptions.ToString()" data-lang="@Sitecore.Context.Language.ToString()"></div>
+}
+else
+{
+
+  <div class="column testimonial is-6">
     <div class="testimonial-inner" style="background-image: url(@Html.Sitecore().MediaUrl(Templates.Testimonial.Fields.Image, testimonialImageOptions))">
-        <h3>@Html.Sitecore().Field(Templates.Testimonial.Fields.Title)</h3>
-        @Html.Sitecore().Field(Templates.Testimonial.Fields.Quote)
+      <h3>@Html.Sitecore().Field(Templates.Testimonial.Fields.Title)</h3>
+      @Html.Sitecore().Field(Templates.Testimonial.Fields.Quote)
     </div>
-</div>
+  </div>
+}

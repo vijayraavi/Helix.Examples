@@ -3,6 +3,9 @@
     <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Content Remove="js\testimonial.js" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Sitecore.Kernel" Version="$(SitecoreVersion)">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>

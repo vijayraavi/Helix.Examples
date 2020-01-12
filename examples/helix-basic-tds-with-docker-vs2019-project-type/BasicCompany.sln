@@ -94,32 +94,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CssVendors", "CssVendors", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCompany.Foundation.CssVendors", "src\Foundation\CssVendors\website\BasicCompany.Foundation.CssVendors.csproj", "{BD69EFED-D6D0-40BE-91EE-60812B958C73}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{D19131AF-C0D9-4720-A223-30BD6F6924F4}"
-	ProjectSection(SolutionItems) = preProject
-		Docker\.env = Docker\.env
-		Docker\Clean-Data.ps1 = Docker\Clean-Data.ps1
-		Docker\docker-compose.9.2.0.xc.yml = Docker\docker-compose.9.2.0.xc.yml
-		Docker\docker-compose.9.2.0.xp.jss.yml = Docker\docker-compose.9.2.0.xp.jss.yml
-		Docker\docker-compose.9.2.0.xp.sxa.yml = Docker\docker-compose.9.2.0.xp.sxa.yml
-		Docker\docker-compose.9.2.0.xp.yml = Docker\docker-compose.9.2.0.xp.yml
-		Docker\docker-compose.9.3.0.xp.spe.yml = Docker\docker-compose.9.3.0.xp.spe.yml
-		Docker\docker-compose.9.3.0.xp.sxa.yml = Docker\docker-compose.9.3.0.xp.sxa.yml
-		Docker\docker-compose.9.3.0.xp.yml = Docker\docker-compose.9.3.0.xp.yml
-		Docker\README.md = Docker\README.md
-		Docker\Set-LicenseEnvironmentVariable.ps1 = Docker\Set-LicenseEnvironmentVariable.ps1
-		Docker\Setup-Run-Sitecore-9.2.ps1 = Docker\Setup-Run-Sitecore-9.2.ps1
-		Docker\Setup-Run-Sitecore-9.3.ps1 = Docker\Setup-Run-Sitecore-9.3.ps1
-		Docker\Stop-Sitecore.ps1 = Docker\Stop-Sitecore.ps1
-		Docker\UpdateHostsFile.ps1 = Docker\UpdateHostsFile.ps1
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCompany.Feature.Products.Tests", "src\Feature\Products\tests\BasicCompany.Feature.Products.Tests.csproj", "{FD9F3B28-F6A8-4A4E-BD29-07ACD74FB367}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContainerScripts", "ContainerScripts", "{3B47EF87-6E4C-47D6-A1AA-A4C9633B7AB2}"
-	ProjectSection(SolutionItems) = preProject
-		Docker\ContainerScripts\Custom-Tools-Entrypoints-IIS-Development.ps1 = Docker\ContainerScripts\Custom-Tools-Entrypoints-IIS-Development.ps1
-		Docker\ContainerScripts\GenerateZipForWwwroot.ps1 = Docker\ContainerScripts\GenerateZipForWwwroot.ps1
-	EndProjectSection
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DockerCompose", "DockerCompose", "{34BFA474-D7DF-4C7C-BA5C-4D0102262769}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "src\DockerCompose\docker-compose.dcproj", "{E7832A11-26EC-4AB3-99D8-4DB5D9C689EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GraphQL", "GraphQL", "{CE93D2E5-C7D7-4FBE-81C4-F0F3C0CA6A46}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCompany.Foundation.GraphQL", "src\Foundation\GraphQL\website\BasicCompany.Foundation.GraphQL.csproj", "{E9B666BD-EE8E-4449-95F0-D0B53B2AEA0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -205,6 +188,14 @@ Global
 		{FD9F3B28-F6A8-4A4E-BD29-07ACD74FB367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FD9F3B28-F6A8-4A4E-BD29-07ACD74FB367}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD9F3B28-F6A8-4A4E-BD29-07ACD74FB367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7832A11-26EC-4AB3-99D8-4DB5D9C689EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7832A11-26EC-4AB3-99D8-4DB5D9C689EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7832A11-26EC-4AB3-99D8-4DB5D9C689EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7832A11-26EC-4AB3-99D8-4DB5D9C689EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9B666BD-EE8E-4449-95F0-D0B53B2AEA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B666BD-EE8E-4449-95F0-D0B53B2AEA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B666BD-EE8E-4449-95F0-D0B53B2AEA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B666BD-EE8E-4449-95F0-D0B53B2AEA0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -239,7 +230,9 @@ Global
 		{9576746B-9B03-4680-8DC4-B3E19F30020A} = {4BB46BDD-D211-40D6-80BA-7891098A3977}
 		{BD69EFED-D6D0-40BE-91EE-60812B958C73} = {9576746B-9B03-4680-8DC4-B3E19F30020A}
 		{FD9F3B28-F6A8-4A4E-BD29-07ACD74FB367} = {CE536605-021D-4A4B-AA2C-690568496E1C}
-		{3B47EF87-6E4C-47D6-A1AA-A4C9633B7AB2} = {D19131AF-C0D9-4720-A223-30BD6F6924F4}
+		{E7832A11-26EC-4AB3-99D8-4DB5D9C689EB} = {34BFA474-D7DF-4C7C-BA5C-4D0102262769}
+		{CE93D2E5-C7D7-4FBE-81C4-F0F3C0CA6A46} = {4BB46BDD-D211-40D6-80BA-7891098A3977}
+		{E9B666BD-EE8E-4449-95F0-D0B53B2AEA0D} = {CE93D2E5-C7D7-4FBE-81C4-F0F3C0CA6A46}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD966AE4-FC31-46FF-BB0A-5A19D03078D3}

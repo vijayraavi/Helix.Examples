@@ -4,6 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Remove="js\Accordion.js" />
+    <Content Remove="js\promocard.js" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Sitecore.Kernel" Version="$(SitecoreVersion)">

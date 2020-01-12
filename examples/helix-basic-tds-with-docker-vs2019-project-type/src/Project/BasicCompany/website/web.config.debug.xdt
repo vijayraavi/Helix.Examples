@@ -1,0 +1,5 @@
+﻿<configuration  xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <system.web>
+    <compilation xdt:Transform="SetAttributes" debug="true"  />  
+  </system.web>
+</configuration>

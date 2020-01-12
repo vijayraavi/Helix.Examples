@@ -2,8 +2,13 @@
   {
     "outputFileName": "js/basic-company.js",
     "inputFiles": [
+      "../../../Foundation/GraphQL/website/js/reactor.js",
+      "../../../Foundation/GraphQL/website/js/graphql.js",
+      "../../../Foundation/GraphQL/website/js/graphqlSetup.js",
       "../../../Feature/Navigation/website/js/navigation.js",
-      "../../../Feature/BasicContent/website/js/accordion.js"
+      "../../../Feature/BasicContent/website/js/accordion.js",
+      "../../../Feature/BasicContent/website/js/promocard.js",
+      "../../../Feature/Services/website/js/testimonial.js"
     ]
   }
 ]

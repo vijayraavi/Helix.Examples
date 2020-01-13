@@ -559,7 +559,7 @@ class Reactor {
 
 
 
-const graph = graphql("/sitecore/api/graph/items/web?sc_apikey={FB719F13-EDF3-42B3-B250-CA0B9507AA95}",
+const graph = graphql("/api/basiccompany?sc_apikey={FB719F13-EDF3-42B3-B250-CA0B9507AA95}",
   {
     alwaysAutodeclare: true,
     asJSON: true,
@@ -570,9 +570,9 @@ const reactor = new Reactor();
 reactor.registerEvent('fetchGraphQlEvent');
 
 reactor.addEventListener('fetchGraphQlEvent', function () {
-  graph.commit('fetchGraphQl').then(function (response) {
+  graph.commit('fetchGraphQl').then(function(response) {
     console.log(response);
-  })
+  });
 });
 
 
